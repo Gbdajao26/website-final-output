@@ -1,0 +1,105 @@
+*
+{
+     /* Hide scrollbar for IE, Edge and Firefox */
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    transition: flex 500ms cubic-bezier(.51,.92,.1,.9),
+                width 1000ms ease,
+                opacity 500ms ease-in-out,
+                background 500ms ease,
+                text-shadow 500ms ease-in-out,
+                scale 500ms cubic-bezier(.32,2,.55,.27),
+                box-shadow 500ms cubic-bezier(.32,2,.55,.27);
+}
+/*this css is for the container for the video and for the main text*/
+.container {
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+    top: 100%;
+}
+.container h1{
+    margin-top: 15%;
+    text-align: left;
+    color: #fff;
+}
+.container p{
+    color: #fff;
+}
+
+.main-text {
+    position: relative; 
+    margin-right: 0%;
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left:60%;
+    text-align: justify;
+    
+}
+.main-text video{
+    width: 100%;
+    height: 70%;
+    margin-top: 50%;
+    margin-left: 60%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+  
+@keyframes bg {
+    0%{background-position: 0% 0%;}
+    50%{background-position: 100% 100%;}   
+    100%{background-position: 0% 0%;}   
+}
+
+body{
+    background: linear-gradient(-45deg, rgb(26, 26, 26), rgb(21, 21, 21));
+    background-size: 200%, 300%;
+    animation: bg 10000ms ease-in-out infinite;
+    margin: 0;
+    color: white;
+}
+
+main{
+    display: flex;
+    width: 100svw;
+    height: 100svh;
+}
+
+@media (max-width: 1024px){
+    main{
+        flex-direction: column;
+    }
+}
+
+footer
+{
+    text-align:center;
+    padding:10px;
+    position:bottom;
+    bottom:200px
+}
+.image-container {
+    max-width: 50%; /* Responsive width */
+    aspect-ratio: 1/1; /* Maintain 1:1 aspect ratio for the circle */
+    overflow: visible;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 10;
+  }
+  
+  .image-container video {
+    position: absolute;
+    top: 50;
+    left: 25;
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    object-fit: cover;
+    
+  }
